@@ -1,9 +1,9 @@
 import React from 'react'
-import { Router, Route, Redirect, IndexRoute, hashHistory } from 'react-router'
+import { Router, Route, IndexRoute, Redirect, hashHistory } from 'react-router'
 
-import Dashboard from '../dashboard/dashboard'
-import BillingCycle from '../billingCycles/billingCycles'
 import AuthOrApp from './authOrApp'
+import Dashboard from '../dashboard/dashboard'
+import BillingCycle from '../billingCycle/billingCycle'
 
 export default props => (
     <Router history={hashHistory}>
@@ -14,4 +14,3 @@ export default props => (
         <Redirect from='*' to='/' />
     </Router>
 )
-
